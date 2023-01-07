@@ -1,0 +1,620 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local mohubmaingui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local FrameForIcon = Instance.new("Frame")
+local ScriptIcon = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local XButton = Instance.new("TextButton")
+local StealWeaponsButton = Instance.new("TextButton")
+local StopJumpPower = Instance.new("TextButton")
+local StopWalkspeed = Instance.new("TextButton")
+local TeleportOptionsButton = Instance.new("TextButton")
+local WalkSpeedButton = Instance.new("TextButton")
+local StealMoneyScript = Instance.new("TextButton")
+local JumpPowerButton = Instance.new("TextButton")
+local TeleportToTeam = Instance.new("Frame")
+local HyagoClan = Instance.new("TextButton")
+local FrameForTextTeleportFrame = Instance.new("Frame")
+local GotoTeamTextlabel = Instance.new("TextLabel")
+local XButton_2 = Instance.new("TextButton")
+local akatsuke = Instance.new("TextButton")
+local HotateClan = Instance.new("TextButton")
+local UzumonkiClan = Instance.new("TextButton")
+local SarukobiClan = Instance.new("TextButton")
+local OtsutsushiClan = Instance.new("TextButton")
+local KazekaClan = Instance.new("TextButton")
+local UchikaClan = Instance.new("TextButton")
+local SonjuClan = Instance.new("TextButton")
+local TeleportToOtherPlaces = Instance.new("Frame")
+local specialplace = Instance.new("TextButton")
+local FrameForTextTptoOtherPlaces = Instance.new("Frame")
+local OtherPlacesTextlabel = Instance.new("TextLabel")
+local specialplace_2 = Instance.new("TextButton")
+local specialplace_3 = Instance.new("TextButton")
+local specialplace_4 = Instance.new("TextButton")
+local specialplace_5 = Instance.new("TextButton")
+local specialplace_6 = Instance.new("TextButton")
+local specialplace_7 = Instance.new("TextButton")
+local specialplace_8 = Instance.new("TextButton")
+local specialplace_9 = Instance.new("TextButton")
+
+--Properties:
+
+mohubmaingui.Name = "mohub-maingui"
+mohubmaingui.Parent = game.CoreGui
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = mohubmaingui
+MainFrame.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+MainFrame.BorderColor3 = Color3.fromRGB(255, 55, 20)
+MainFrame.Position = UDim2.new(0.315028906, 0, 0.290123433, 0)
+MainFrame.Size = UDim2.new(0, 512, 0, 377)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+FrameForIcon.Name = "FrameForIcon"
+FrameForIcon.Parent = MainFrame
+FrameForIcon.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+FrameForIcon.BorderColor3 = Color3.fromRGB(255, 55, 20)
+FrameForIcon.Position = UDim2.new(0, 0, -0.0344827585, 0)
+FrameForIcon.Size = UDim2.new(0, 512, 0, 24)
+
+ScriptIcon.Name = "ScriptIcon"
+ScriptIcon.Parent = FrameForIcon
+ScriptIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptIcon.BackgroundTransparency = 1.000
+ScriptIcon.Position = UDim2.new(0, 0, -0.00806427002, 0)
+ScriptIcon.Size = UDim2.new(0, 32, 0, 24)
+ScriptIcon.Image = "rbxassetid://11392195427"
+
+TextLabel.Parent = FrameForIcon
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 55, 20)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0625, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 128, 0, 23)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "MO -  HUBv1.0"
+TextLabel.TextColor3 = Color3.fromRGB(255, 55, 20)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+XButton.Name = "X Button"
+XButton.Parent = FrameForIcon
+XButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+XButton.BorderColor3 = Color3.fromRGB(255, 55, 20)
+XButton.Position = UDim2.new(0.921875, 0, -0.0416666679, 0)
+XButton.Size = UDim2.new(0, 40, 0, 24)
+XButton.Font = Enum.Font.SourceSansBold
+XButton.Text = "X"
+XButton.TextColor3 = Color3.fromRGB(255, 55, 20)
+XButton.TextScaled = true
+XButton.TextSize = 14.000
+XButton.TextWrapped = true
+XButton.MouseButton1Down:connect(function()
+
+	MainFrame.Visible = false
+	
+	end)
+
+StealWeaponsButton.Name = "StealWeaponsButton"
+StealWeaponsButton.Parent = FrameForIcon
+StealWeaponsButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StealWeaponsButton.BorderColor3 = Color3.fromRGB(255, 55, 20)
+StealWeaponsButton.Position = UDim2.new(0.544921875, 0, 5.73132229, 0)
+StealWeaponsButton.Size = UDim2.new(0, 200, 0, 50)
+StealWeaponsButton.Font = Enum.Font.SourceSansBold
+StealWeaponsButton.Text = "Steal Weapons"
+StealWeaponsButton.TextColor3 = Color3.fromRGB(255, 55, 20)
+StealWeaponsButton.TextScaled = true
+StealWeaponsButton.TextSize = 14.000
+StealWeaponsButton.TextWrapped = true
+StealWeaponsButton.MouseButton1Down:connect(function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(52.6504593, 173.935654, -381.0047, 0.0262626223, 0.000335597724, -0.999655008, -0.0127754007, 0.999918401, 5.48296093e-08, 0.99957341, 0.0127709927, 0.0262647662)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(52.8455582, 173.932541, -374.476044, -0.0174461585, -0.00022292466, -0.99984777, -0.0127752954, 0.999918401, -2.6664166e-08, 0.999766171, 0.0127733508, -0.0174475815)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(52.6971169, 173.938736, -367.927826, -0.0261628199, -0.000334287412, -0.999657631, -0.0127754044, 0.999918401, -1.95408187e-08, 0.999576032, 0.01277103, -0.0261649545)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-649.645569, 173.868805, -516.424561, -0.0734336078, -0.1164352, 0.990479887, -0.157439336, 0.982061088, 0.103773087, -0.984794557, -0.148320064, -0.0904477537)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-649.175598, 173.948624, -523.509644, -7.81837934e-06, -1.28573603e-07, 1, -0.0127753606, 0.999918401, 2.86804909e-08, -0.999918401, -0.0127753606, -7.81938434e-06)
+wait(0.1)
+	
+	
+	end)
+	
+StopJumpPower.Name = "Stop JumpPower"
+StopJumpPower.Parent = FrameForIcon
+StopJumpPower.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StopJumpPower.BorderColor3 = Color3.fromRGB(255, 55, 20)
+StopJumpPower.Position = UDim2.new(0.0625, 0, 13.4483852, 0)
+StopJumpPower.Size = UDim2.new(0, 200, 0, 50)
+StopJumpPower.Font = Enum.Font.SourceSansBold
+StopJumpPower.Text = "Stop JumpPower"
+StopJumpPower.TextColor3 = Color3.fromRGB(255, 55, 20)
+StopJumpPower.TextScaled = true
+StopJumpPower.TextSize = 14.000
+StopJumpPower.TextWrapped = true
+StopJumpPower.MouseButton1Down:connect(function()
+
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+end)
+
+StopWalkspeed.Name = "Stop Walkspeed"
+StopWalkspeed.Parent = FrameForIcon
+StopWalkspeed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StopWalkspeed.BorderColor3 = Color3.fromRGB(255, 55, 20)
+StopWalkspeed.Position = UDim2.new(0.544921875, 0, 13.4483852, 0)
+StopWalkspeed.Size = UDim2.new(0, 200, 0, 50)
+StopWalkspeed.Font = Enum.Font.SourceSansBold
+StopWalkspeed.Text = "Stop Walkspeed"
+StopWalkspeed.TextColor3 = Color3.fromRGB(255, 55, 20)
+StopWalkspeed.TextScaled = true
+StopWalkspeed.TextSize = 14.000
+StopWalkspeed.TextWrapped = true
+StopWalkspeed.MouseButton1Down:connect(function()
+
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+end)
+
+TeleportOptionsButton.Name = "TeleportOptionsButton"
+TeleportOptionsButton.Parent = FrameForIcon
+TeleportOptionsButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TeleportOptionsButton.BorderColor3 = Color3.fromRGB(255, 55, 20)
+TeleportOptionsButton.Position = UDim2.new(0.3046875, 0, 2.65671921, 0)
+TeleportOptionsButton.Size = UDim2.new(0, 200, 0, 51)
+TeleportOptionsButton.Font = Enum.Font.SourceSansBold
+TeleportOptionsButton.Text = "TeleportOptions"
+TeleportOptionsButton.TextColor3 = Color3.fromRGB(255, 55, 20)
+TeleportOptionsButton.TextScaled = true
+TeleportOptionsButton.TextSize = 14.000
+TeleportOptionsButton.TextWrapped = true
+TeleportOptionsButton.MouseButton1Down:connect(function()
+
+	TeleportToTeam.Visible = true
+	TeleportToOtherPlaces.Visible = true
+
+end)
+
+WalkSpeedButton.Name = "WalkSpeedButton"
+WalkSpeedButton.Parent = MainFrame
+WalkSpeedButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedButton.BorderColor3 = Color3.fromRGB(255, 55, 20)
+WalkSpeedButton.Position = UDim2.new(0.544921875, 0, 0.689655125, 0)
+WalkSpeedButton.Size = UDim2.new(0, 200, 0, 50)
+WalkSpeedButton.Font = Enum.Font.SourceSansBold
+WalkSpeedButton.Text = "WalkSpeed"
+WalkSpeedButton.TextColor3 = Color3.fromRGB(255, 55, 20)
+WalkSpeedButton.TextScaled = true
+WalkSpeedButton.TextSize = 14.000
+WalkSpeedButton.TextWrapped = true
+WalkSpeedButton.MouseButton1Down:connect(function()
+
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
+
+end)
+
+StealMoneyScript.Name = "StealMoneyScript"
+StealMoneyScript.Parent = MainFrame
+StealMoneyScript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StealMoneyScript.BorderColor3 = Color3.fromRGB(255, 55, 20)
+StealMoneyScript.Position = UDim2.new(0.0625, 0, 0.328912497, 0)
+StealMoneyScript.Size = UDim2.new(0, 200, 0, 50)
+StealMoneyScript.Font = Enum.Font.SourceSansBold
+StealMoneyScript.Text = "Steal Money"
+StealMoneyScript.TextColor3 = Color3.fromRGB(255, 55, 20)
+StealMoneyScript.TextScaled = true
+StealMoneyScript.TextSize = 14.000
+StealMoneyScript.TextWrapped = true
+StealMoneyScript.MouseButton1Down:connect(function()	
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18.0557919, 173.096558, -209.047195, -0.229389831, 0.00849911012, 0.973297536, 0.0370257832, 0.999314308, 5.79218238e-08, -0.972630143, 0.0360371135, -0.229547232)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-621.127075, 173.046631, -324.925781, -0.219514862, 0.00813329127, -0.975575268, 0.0370258167, 0.999314308, -2.18607266e-09, 0.974906325, -0.0361214727, -0.219665483)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-538.416321, 173.229965, -177.777954, -0.273269922, -0.00349140889, -0.96193105, -0.0127753969, 0.999918401, 7.92905741e-09, 0.961852551, 0.0122890528, -0.273292214)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-419.925812, 173.060745, -98.2314835, 0.999724269, 0.0127729066, 0.0197031181, -0.0127753876, 0.999918401, 5.23716714e-08, -0.0197015107, -0.000251767342, 0.999805868)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(41.0278893, 173.011017, -586.582153, -0.0197042953, -0.000251710153, 0.999805808, -0.0127754835, 0.999918401, -4.22821245e-08, -0.999724209, -0.0127730025, -0.0197059028)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-104.18219, 173.135147, -103.700882, 0.999765635, 0.0127733555, -0.0174780115, -0.0127753075, 0.999918401, -3.55288332e-09, 0.0174765848, 0.000223290539, 0.999847233)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28.1166821, 173.034042, -372.966858, -0.0174196512, -0.00022250216, 0.999848247, -0.0127753271, 0.999918401, -5.77645629e-08, -0.999766648, -0.012773389, -0.0174210723)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-261.896484, 173.036606, -97.355957, 0.999162734, -0.0370202623, 0.0174183846, 0.0370258763, 0.999314308, 7.43398374e-08, -0.0174064431, 0.000644856715, 0.999848306)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-624.842773, 173.036804, -523.627197, 0.026131181, -0.000968292006, -0.999658048, 0.0370258279, 0.999314308, -9.94438452e-08, 0.998972595, -0.0370131619, 0.0261491146)
+
+end)
+
+JumpPowerButton.Name = "JumpPowerButton"
+JumpPowerButton.Parent = MainFrame
+JumpPowerButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerButton.BorderColor3 = Color3.fromRGB(255, 55, 20)
+JumpPowerButton.Position = UDim2.new(0.0625, 0, 0.689655125, 0)
+JumpPowerButton.Size = UDim2.new(0, 200, 0, 50)
+JumpPowerButton.Font = Enum.Font.SourceSansBold
+JumpPowerButton.Text = "JumpPower"
+JumpPowerButton.TextColor3 = Color3.fromRGB(255, 55, 20)
+JumpPowerButton.TextScaled = true
+JumpPowerButton.TextSize = 14.000
+JumpPowerButton.TextWrapped = true
+JumpPowerButton.MouseButton1Down:connect(function()	
+
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+
+end)
+
+TeleportToTeam.Name = "TeleportToTeam"
+TeleportToTeam.Parent = mohubmaingui
+TeleportToTeam.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+TeleportToTeam.BorderColor3 = Color3.fromRGB(255, 55, 20)
+TeleportToTeam.Position = UDim2.new(0.166907504, 0, 0.272839516, 0)
+TeleportToTeam.Size = UDim2.new(0, 176, 0, 390)
+TeleportToTeam.Active = true
+TeleportToTeam.Visible = false
+TeleportToTeam.Draggable = true
+	
+HyagoClan.Name = "Hyago Clan"
+HyagoClan.Parent = TeleportToTeam
+HyagoClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HyagoClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+HyagoClan.Position = UDim2.new(0.0397727266, 0, 0.183642745, 0)
+HyagoClan.Size = UDim2.new(0, 162, 0, 39)
+HyagoClan.Font = Enum.Font.SourceSansBold
+HyagoClan.Text = "Hyago Clan"
+HyagoClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+HyagoClan.TextScaled = true
+HyagoClan.TextSize = 14.000
+HyagoClan.TextWrapped = true
+HyagoClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(50.0629845, 174.756088, -352.943176, -0.0612624623, -0.000744092569, 0.99812144, -0.0121433288, 0.999926269, 1.07633028e-07, -0.998047829, -0.0121205105, -0.0612669811)
+
+	end)
+
+
+FrameForTextTeleportFrame.Name = "FrameForTextTeleportFrame"
+FrameForTextTeleportFrame.Parent = TeleportToTeam
+FrameForTextTeleportFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+FrameForTextTeleportFrame.BorderColor3 = Color3.fromRGB(255, 55, 20)
+FrameForTextTeleportFrame.Size = UDim2.new(0, 176, 0, 24)
+
+GotoTeamTextlabel.Name = "GotoTeamTextlabel"
+GotoTeamTextlabel.Parent = FrameForTextTeleportFrame
+GotoTeamTextlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GotoTeamTextlabel.BackgroundTransparency = 1.000
+GotoTeamTextlabel.Size = UDim2.new(0, 176, 0, 24)
+GotoTeamTextlabel.Font = Enum.Font.SourceSansBold
+GotoTeamTextlabel.Text = "Goto Team..."
+GotoTeamTextlabel.TextColor3 = Color3.fromRGB(255, 55, 20)
+GotoTeamTextlabel.TextScaled = true
+GotoTeamTextlabel.TextSize = 14.000
+GotoTeamTextlabel.TextWrapped = true
+
+XButton_2.Name = "X Button2"
+XButton_2.Parent = FrameForTextTeleportFrame
+XButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+XButton_2.BorderColor3 = Color3.fromRGB(255, 55, 20)
+XButton_2.Position = UDim2.new(0.842329562, 0, 0, 0)
+XButton_2.Size = UDim2.new(0, 27, 0, 24)
+XButton_2.Font = Enum.Font.SourceSansBold
+XButton_2.Text = "X"
+XButton_2.TextColor3 = Color3.fromRGB(255, 55, 20)
+XButton_2.TextScaled = true
+XButton_2.TextSize = 14.000
+XButton_2.TextWrapped = true
+XButton_2.MouseButton1Down:connect(function()	
+
+		TeleportToTeam.Visible = false
+		TeleportToOtherPlaces.Visible = false
+
+	end)
+
+akatsuke.Name = "akatsuke"
+akatsuke.Parent = TeleportToTeam
+akatsuke.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+akatsuke.BorderColor3 = Color3.fromRGB(255, 55, 20)
+akatsuke.Position = UDim2.new(0.0397727266, 0, 0.0836427435, 0)
+akatsuke.Size = UDim2.new(0, 162, 0, 39)
+akatsuke.Font = Enum.Font.SourceSansBold
+akatsuke.Text = "Akatsuke"
+akatsuke.TextColor3 = Color3.fromRGB(255, 55, 20)
+akatsuke.TextScaled = true
+akatsuke.TextSize = 14.000
+akatsuke.TextWrapped = true
+akatsuke.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(55.4048271, 174.863983, -563.697327, -0.973168075, -0.229649305, 0.0143230371, -0.228910834, 0.97258848, 0.0408842564, -0.0233195052, 0.0365085602, -0.999061227)
+
+	end)
+	
+HotateClan.Name = "Hotate Clan"
+HotateClan.Parent = TeleportToTeam
+HotateClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HotateClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+HotateClan.Position = UDim2.new(0.0397727266, 0, 0.878514528, 0)
+HotateClan.Size = UDim2.new(0, 162, 0, 39)
+HotateClan.Font = Enum.Font.SourceSansBold
+HotateClan.Text = "Hotate Clan"
+HotateClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+HotateClan.TextScaled = true
+HotateClan.TextSize = 14.000
+HotateClan.TextWrapped = true
+HotateClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-286.313416, 172.743149, -82.7579346, 0.979298532, 0.0125119062, 0.202034101, -0.0127753764, 0.999918401, 1.05831845e-07, -0.20201762, -0.0025811654, 0.979378462)
+
+	end)
+	
+UzumonkiClan.Name = "Uzumonki Clan"
+UzumonkiClan.Parent = TeleportToTeam
+UzumonkiClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UzumonkiClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+UzumonkiClan.Position = UDim2.new(0.0397727266, 0, 0.783642769, 0)
+UzumonkiClan.Size = UDim2.new(0, 162, 0, 39)
+UzumonkiClan.Font = Enum.Font.SourceSansBold
+UzumonkiClan.Text = "Uzumonki Clan"
+UzumonkiClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+UzumonkiClan.TextScaled = true
+UzumonkiClan.TextSize = 14.000
+UzumonkiClan.TextWrapped = true
+UzumonkiClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.74231, 172.690094, -191.01268, 0.700865388, 0.00895455293, -0.713237286, -0.0127754062, 0.999918401, -2.51193022e-08, 0.713179111, 0.00911191385, 0.700922608)
+
+	end)
+	
+	
+SarukobiClan.Name = "Sarukobi Clan"
+SarukobiClan.Parent = TeleportToTeam
+SarukobiClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SarukobiClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+SarukobiClan.Position = UDim2.new(0.0397727266, 0, 0.683642745, 0)
+SarukobiClan.Size = UDim2.new(0, 162, 0, 39)
+SarukobiClan.Font = Enum.Font.SourceSansBold
+SarukobiClan.Text = "Sarukobi Clan"
+SarukobiClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+SarukobiClan.TextScaled = true
+SarukobiClan.TextSize = 14.000
+SarukobiClan.TextWrapped = true
+SarukobiClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-632.50116, 172.742416, -548.895508, -0.0784293935, -0.00100208819, -0.996919155, -0.0127755059, 0.999918401, -3.13750945e-08, 0.996837795, 0.0127361445, -0.0784357935)
+
+	end)
+	
+OtsutsushiClan.Name = "Otsutsushi Clan"
+OtsutsushiClan.Parent = TeleportToTeam
+OtsutsushiClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OtsutsushiClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+OtsutsushiClan.Position = UDim2.new(0.0397727266, 0, 0.583642721, 0)
+OtsutsushiClan.Size = UDim2.new(0, 162, 0, 39)
+OtsutsushiClan.Font = Enum.Font.SourceSansBold
+OtsutsushiClan.Text = "Otsutsushi Clan"
+OtsutsushiClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+OtsutsushiClan.TextScaled = true
+OtsutsushiClan.TextSize = 14.000
+OtsutsushiClan.TextWrapped = true
+OtsutsushiClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-443.039886, 172.877762, -86.3180923, 0.995314896, 0.0127165876, -0.0958465487, -0.0127754044, 0.999918401, -6.99800928e-09, 0.0958387256, 0.00122448546, 0.995396137)
+
+	end)
+	
+KazekaClan.Name = "Kazeka Clan"
+KazekaClan.Parent = TeleportToTeam
+KazekaClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KazekaClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+KazekaClan.Position = UDim2.new(0.0397727266, 0, 0.483642757, 0)
+KazekaClan.Size = UDim2.new(0, 162, 0, 39)
+KazekaClan.Font = Enum.Font.SourceSansBold
+KazekaClan.Text = "Kazeka Clan"
+KazekaClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+KazekaClan.TextScaled = true
+KazekaClan.TextSize = 14.000
+KazekaClan.TextWrapped = true
+KazekaClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-634.305847, 172.86586, -349.724884, -0.368037343, -0.00470216013, -0.929799139, -0.0127753709, 0.999918401, 4.03131075e-08, 0.929723263, 0.0118785435, -0.368067384)
+
+	end)
+
+UchikaClan.Name = "Uchika Clan"
+UchikaClan.Parent = TeleportToTeam
+UchikaClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UchikaClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+UchikaClan.Position = UDim2.new(0.0397727266, 0, 0.383642733, 0)
+UchikaClan.Size = UDim2.new(0, 162, 0, 39)
+UchikaClan.Font = Enum.Font.SourceSansBold
+UchikaClan.Text = "Uchika Clan"
+UchikaClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+UchikaClan.TextScaled = true
+UchikaClan.TextSize = 14.000
+UchikaClan.TextWrapped = true
+UchikaClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-122.728241, 172.836716, -59.0692635, 0.996835947, 0.0127359144, 0.0784592554, -0.0127752982, 0.999918401, 1.50030957e-08, -0.0784528553, -0.00100235536, 0.996917307)
+
+	end)
+	
+SonjuClan.Name = "Sonju Clan"
+SonjuClan.Parent = TeleportToTeam
+SonjuClan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SonjuClan.BorderColor3 = Color3.fromRGB(255, 55, 20)
+SonjuClan.Position = UDim2.new(0.0397727266, 0, 0.283642739, 0)
+SonjuClan.Size = UDim2.new(0, 162, 0, 39)
+SonjuClan.Font = Enum.Font.SourceSansBold
+SonjuClan.Text = "Sonju Clan"
+SonjuClan.TextColor3 = Color3.fromRGB(255, 55, 20)
+SonjuClan.TextScaled = true
+SonjuClan.TextSize = 14.000
+SonjuClan.TextWrapped = true
+SonjuClan.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(15.6001091, 172.807388, -182.251328, 0.629273951, 0.00803982001, 0.777141988, -0.0127753299, 0.999918401, 2.3572241e-08, -0.777078569, -0.00992826, 0.62932533)
+
+	end)
+
+TeleportToOtherPlaces.Name = "TeleportToOtherPlaces"
+TeleportToOtherPlaces.Parent = mohubmaingui
+TeleportToOtherPlaces.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+TeleportToOtherPlaces.BorderColor3 = Color3.fromRGB(255, 55, 20)
+TeleportToOtherPlaces.Position = UDim2.new(0.039739877, 0, 0.272839516, 0)
+TeleportToOtherPlaces.Size = UDim2.new(0, 176, 0, 390)
+TeleportToOtherPlaces.Active = true
+TeleportToOtherPlaces.Visible = false
+TeleportToOtherPlaces.Draggable = true
+
+specialplace.Name = "--specialplace--"
+specialplace.Parent = TeleportToOtherPlaces
+specialplace.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace.Position = UDim2.new(0.0397727266, 0, 0.183642745, 0)
+specialplace.Size = UDim2.new(0, 162, 0, 39)
+specialplace.Font = Enum.Font.SourceSansBold
+specialplace.Text = "--specialplace--"
+specialplace.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace.TextScaled = true
+specialplace.TextSize = 14.000
+specialplace.TextWrapped = true
+
+FrameForTextTptoOtherPlaces.Name = "FrameForTextTptoOtherPlaces"
+FrameForTextTptoOtherPlaces.Parent = TeleportToOtherPlaces
+FrameForTextTptoOtherPlaces.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+FrameForTextTptoOtherPlaces.BorderColor3 = Color3.fromRGB(255, 55, 20)
+FrameForTextTptoOtherPlaces.Size = UDim2.new(0, 176, 0, 24)
+
+OtherPlacesTextlabel.Name = "OtherPlacesTextlabel"
+OtherPlacesTextlabel.Parent = FrameForTextTptoOtherPlaces
+OtherPlacesTextlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherPlacesTextlabel.BackgroundTransparency = 1.000
+OtherPlacesTextlabel.Size = UDim2.new(0, 176, 0, 24)
+OtherPlacesTextlabel.Font = Enum.Font.SourceSansBold
+OtherPlacesTextlabel.Text = "Other Places..."
+OtherPlacesTextlabel.TextColor3 = Color3.fromRGB(255, 55, 20)
+OtherPlacesTextlabel.TextScaled = true
+OtherPlacesTextlabel.TextSize = 14.000
+OtherPlacesTextlabel.TextWrapped = true
+
+specialplace_2.Name = "jigen"
+specialplace_2.Parent = TeleportToOtherPlaces
+specialplace_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_2.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_2.Position = UDim2.new(0.0397727266, 0, 0.0836427435, 0)
+specialplace_2.Size = UDim2.new(0, 162, 0, 39)
+specialplace_2.Font = Enum.Font.SourceSansBold
+specialplace_2.Text = "jigen"
+specialplace_2.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_2.TextScaled = true
+specialplace_2.TextSize = 14.000
+specialplace_2.TextWrapped = true
+specialplace_2.MouseButton1Down:connect(function()
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1157.16394, 2800.78784, -410.044556, -0.0174196027, 0.990048766, -0.139641881, 8.20159318e-09, 0.13966307, 0.990199029, 0.999848247, 0.0172488727, -0.00243288302)
+
+	end)
+	
+specialplace_3.Name = "--specialplace--"
+specialplace_3.Parent = TeleportToOtherPlaces
+specialplace_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_3.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_3.Position = UDim2.new(0.0397727266, 0, 0.878514528, 0)
+specialplace_3.Size = UDim2.new(0, 162, 0, 39)
+specialplace_3.Font = Enum.Font.SourceSansBold
+specialplace_3.Text = "--specialplace--"
+specialplace_3.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_3.TextScaled = true
+specialplace_3.TextSize = 14.000
+specialplace_3.TextWrapped = true
+
+specialplace_4.Name = "--specialplace--"
+specialplace_4.Parent = TeleportToOtherPlaces
+specialplace_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_4.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_4.Position = UDim2.new(0.0397727266, 0, 0.783642769, 0)
+specialplace_4.Size = UDim2.new(0, 162, 0, 39)
+specialplace_4.Font = Enum.Font.SourceSansBold
+specialplace_4.Text = "--specialplace--"
+specialplace_4.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_4.TextScaled = true
+specialplace_4.TextSize = 14.000
+specialplace_4.TextWrapped = true
+
+specialplace_5.Name = "--specialplace--"
+specialplace_5.Parent = TeleportToOtherPlaces
+specialplace_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_5.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_5.Position = UDim2.new(0.0397727266, 0, 0.683642745, 0)
+specialplace_5.Size = UDim2.new(0, 162, 0, 39)
+specialplace_5.Font = Enum.Font.SourceSansBold
+specialplace_5.Text = "--specialplace--"
+specialplace_5.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_5.TextScaled = true
+specialplace_5.TextSize = 14.000
+specialplace_5.TextWrapped = true
+
+specialplace_6.Name = "--specialplace--"
+specialplace_6.Parent = TeleportToOtherPlaces
+specialplace_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_6.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_6.Position = UDim2.new(0.0397727266, 0, 0.583642721, 0)
+specialplace_6.Size = UDim2.new(0, 162, 0, 39)
+specialplace_6.Font = Enum.Font.SourceSansBold
+specialplace_6.Text = "--specialplace--"
+specialplace_6.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_6.TextScaled = true
+specialplace_6.TextSize = 14.000
+specialplace_6.TextWrapped = true
+
+specialplace_7.Name = "--specialplace--"
+specialplace_7.Parent = TeleportToOtherPlaces
+specialplace_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_7.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_7.Position = UDim2.new(0.0397727266, 0, 0.483642757, 0)
+specialplace_7.Size = UDim2.new(0, 162, 0, 39)
+specialplace_7.Font = Enum.Font.SourceSansBold
+specialplace_7.Text = "--specialplace--"
+specialplace_7.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_7.TextScaled = true
+specialplace_7.TextSize = 14.000
+specialplace_7.TextWrapped = true
+
+specialplace_8.Name = "--specialplace--"
+specialplace_8.Parent = TeleportToOtherPlaces
+specialplace_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_8.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_8.Position = UDim2.new(0.0397727266, 0, 0.383642733, 0)
+specialplace_8.Size = UDim2.new(0, 162, 0, 39)
+specialplace_8.Modal = true
+specialplace_8.Font = Enum.Font.SourceSansBold
+specialplace_8.Text = "--specialplace--"
+specialplace_8.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_8.TextScaled = true
+specialplace_8.TextSize = 14.000
+specialplace_8.TextWrapped = true
+
+specialplace_9.Name = "--specialplace--"
+specialplace_9.Parent = TeleportToOtherPlaces
+specialplace_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+specialplace_9.BorderColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_9.Position = UDim2.new(0.0397727266, 0, 0.283642739, 0)
+specialplace_9.Size = UDim2.new(0, 162, 0, 39)
+specialplace_9.Font = Enum.Font.SourceSansBold
+specialplace_9.Text = "--specialplace--"
+specialplace_9.TextColor3 = Color3.fromRGB(255, 55, 20)
+specialplace_9.TextScaled = true
+specialplace_9.TextSize = 14.000
+specialplace_9.TextWrapped = true
+	
+
+
